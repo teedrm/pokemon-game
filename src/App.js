@@ -217,6 +217,7 @@ export default function App() {
 const Wrapper = styled.div`
 width: 100%;
 overflow: hidden;
+margin: 0;
 `;
 
 const SceneContainer = styled.div`
@@ -230,6 +231,6 @@ const GameContainer = styled.div`
 position: absolute;
 z-index: 1;
 align-item: center;
-margin-left: 20%;
+margin-left: 10%;
 margin-top: 3%;
 `;
