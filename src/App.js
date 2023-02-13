@@ -1,20 +1,20 @@
 import { useEffect, useState } from 'react'
-import bluePokemon from './images/blue-pokemon.png'
-import greenPokemon from './images/green-pokemon.png'
-import orangePokemon from './images/orange-pokemon.png'
-import purplePokemon from './images/purple-pokemon.png'
-import redPokemon from './images/red-pokemon.png'
-import yellowPokemon from './images/yellow-pokemon.png'
+import bluePokeball from './images/blue-pokeball.png'
+import greenPokeball from './images/green-pokeball.png'
+import orangePokeball from './images/orange-pokeball.png'
+import purplePokeball from './images/purple-pokeball.png'
+import redPokeball from './images/red-pokeball.png'
+import yellowPokeball from './images/yellow-pokeball.png'
 import blank from './images/blank.png'
 
 const width = 8
-const pokemons = [
-  bluePokemon,
-  orangePokemon,
-  purplePokemon,
-  redPokemon,
-  yellowPokemon,
-  greenPokemon
+const pokeballs = [
+  bluePokeball,
+  orangePokeball,
+  purplePokeball,
+  redPokeball,
+  yellowPokeball,
+  greenPokeball
 ]
 
 const App = () => {
@@ -94,8 +94,8 @@ const App = () => {
 
       //first 3 rows empty - fill with squares
       if (isFirstRow && currentColourArrangement[i] === blank) {
-        let randomNumber = Math.floor(Math.random() * pokemons.length)
-        currentColourArrangement[i] = pokemons[randomNumber]
+        let randomNumber = Math.floor(Math.random() * pokeballs.length)
+        currentColourArrangement[i] = pokeballs[randomNumber]
       }
 
       if ((currentColourArrangement[i + width]) === blank) {
@@ -148,7 +148,7 @@ const App = () => {
   const createBoard = () => {
     const randomColorArrangement = []
     for (let i = 0; i < width * width; i++) {
-      const randomColor = pokemons[Math.floor(Math.random() * pokemons.length)]
+      const randomColor = pokeballs[Math.floor(Math.random() * pokeballs.length)]
       randomColorArrangement.push(randomColor)
     }
     setCurrentColourArrangement(randomColorArrangement)
