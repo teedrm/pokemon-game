@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-// import ScoreBoard from './components/ScoreBoard'
 import bluePokemon from './images/blue-pokemon.png'
 import greenPokemon from './images/green-pokemon.png'
 import orangePokemon from './images/orange-pokemon.png'
@@ -192,7 +191,6 @@ const App = () => {
           />
         ))}
       </div>
-      {/* <ScoreBoard score={scoreDisplay}/> */}
     </div>
   )
 }
