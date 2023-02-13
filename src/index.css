@@ -1,6 +1,3 @@
-* {
-  background-color: rgb(136, 227, 255);
-}
 
 .app {
   display: flex;
@@ -17,6 +14,7 @@
 }
 
 .game {
+  z-index: 1;
   width: 560px;
   height: 560px;
   display: flex;
