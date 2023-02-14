@@ -1,6 +1,5 @@
-# Getting Started
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Result
+![demo](https://github.com/teedrm/pokemon-game/blob/master/public/pokecrush.gif)
 
 ## Available Scripts
 
