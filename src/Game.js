@@ -6,6 +6,7 @@ import purplePokeball from './images/purple-pokeball.png'
 import redPokeball from './images/red-pokeball.png'
 import yellowPokeball from './images/yellow-pokeball.png'
 import blank from './images/blank.png'
+import ScoreBoard from './components/ScoreBoard'
 
 const width = 8
 const pokeballs = [
@@ -174,7 +175,7 @@ const Game = () => {
 
   return (
     <div className="app">
-      
+
       <div className="game">
         {currentColourArrangement.map((pokemon, index) => (
           <img
@@ -192,6 +193,7 @@ const Game = () => {
           />
         ))}
       </div>
+      <ScoreBoard score={scoreDisplay} />
     </div>
   )
 }
